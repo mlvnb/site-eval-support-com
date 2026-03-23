@@ -1,19 +1,109 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<h1> SITE Breton Melvin TDA </h1>
-	<body bgcolor="red">
-		<h2> Liste des articles</h2>
-	<h2> Sommaire</h2>
-	<ul>
-		<li><a href="foot.html"> Articles de football </a></li>
-		<li><a href="volley.html"> Articles de volleyball </a></li>
-		<li><a href="hand.html"> Articles de handball </a></li>
-		<li><a href="formulaire.html"> Formulaire d'inscription </a></li>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mélvin TDA Sports - L'Émotion Pure</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="brand">Mélvin TDA</a>
+            <ul class="nav-links">
+                <li><a href="#hero">Accueil</a></li>
+                <li><a href="#foot">Football</a></li>
+                <li><a href="#volley">Volleyball</a></li>
+                <li><a href="#hand">Handball</a></li>
+                <li><a href="#rejoindre" class="btn-nav">Rejoindre</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="hero" class="hero-section">
+        <video autoplay loop muted playsinline class="back-video">
+            <source src="video-intro-sports.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas le tag vidéo.
+        </video>
+        <div class="hero-content">
+            <h1>L'Émotion<br>du Sport Pure</h1>
+            <p>Découvrez la passion, le talent et la performance à travers le Football, le Volleyball et le Handball.</p>
+            <a href="#foot" class="btn-main">Explorer les Articles</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="foot" class="sport-section">
+            <div class="container">
+                <div class="sport-grid">
+                    <div class="sport-text">
+                        <h2>Le Football</h2>
+                        <p>Plongez au cœur du sport le plus populaire au monde. Des analyses tactiques, des portraits de joueurs légendaires et les moments forts des plus grands matchs. Vibrez au rythme du ballon rond.</p>
+                        <a href="foot.html" class="btn-text">Lire les articles →</a>
+                    </div>
+                    <div class="sport-image">
+                        <img src="chemin/vers/ton/image-football.jpg" alt="Action de football intense">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="volley" class="sport-section alternate-bg">
+            <div class="container">
+                <h2>Le Volleyball</h2>
+                <p class="section-subtitle">L'élégance, la puissance et l'esprit d'équipe réunis sur un terrain.</p>
+                <div class="media-grid">
+                    <div class="media-item">
+                        <img src="chemin/vers/ton/image-volley-1.jpg" alt="Smash de volleyball">
+                    </div>
+                    <div class="media-item">
+                        <video loop muted playsinline class="grid-video">
+                            <source src="video-volley.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="media-item">
+                        <img src="chemin/vers/ton/image-volley-2.jpg" alt="Célébration d'équipe volley">
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="volley.html" class="btn-main">Découvrir le Volley</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="hand" class="sport-section video-bg-section">
+            <video autoplay loop muted playsinline class="back-video">
+                <source src="video-background-handball.mp4" type="video/mp4">
+            </video>
+            <div class="container relative-content">
+                <div class="sport-grid reverse">
+                    <div class="sport-text light-text">
+                        <h2>Le Handball</h2>
+                        <p>Vitesse, impact et précision. Découvrez l'intensité du handball, un sport où chaque seconde compte. Des articles sur les stratégies défensives aux exploits des gardiens de but.</p>
+                        <a href="hand.html" class="btn-text light">Tous les articles →</a>
+                    </div>
+                    <div class="sport-image">
+                        <img src="chemin/vers/ton/image-handball.jpg" alt="Joueur de handball en plein saut">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="rejoindre" class="join-section">
+            <div class="container text-center">
+                <h2>Rejoignez l'Aventure</h2>
+                <p>Inscrivez-vous pour ne rien manquer de l'actualité sportive et accéder à des contenus exclusifs.</p>
+                <a href="formulaire.html" class="btn-lg">S'inscrire Maintenant</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2023 Breton Melvin TDA. Tous droits réservés.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
